@@ -1,0 +1,29 @@
+.main {
+  width: 90%;
+  max-width: 50rem;
+  margin: 2.5rem auto;
+  display: grid;
+  grid-auto-flow: row;
+  gap: 2rem;
+
+  &__users {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 0.5rem;
+    overflow: auto;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) {
+  .main {
+    margin: 4rem auto;
+    grid-template-columns: 1fr 3fr;
+
+    &__users {
+      flex-direction: column;
+    }
+  }
+}
